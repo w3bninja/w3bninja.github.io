@@ -45,12 +45,98 @@
 <div class="text-center" style="display:none">
 <span class="msg"></span>
 </div>
-<div class="mobile-navigation">
-	<a class="nav-mobile-control btn btn-primary toggle-menu menu-left push-body jPushMenuBtn"><i class="fa fa-bars"></i></a>
-</div>
+
+	
+	
 <div class="nav-mobile cbp-spmenu cbp-spmenu-vertical cbp-spmenu-left">
-	mobile nav
+    <div class="search">
+        <form name="catsearchform11819" method="post" action="/Default.aspx?SiteSearchID=3896&amp;PageID=16462607">
+            <div class="input-group">
+                <input class="form-control" type="text" name="CAT_Search" id="CAT_Search" placeholder="Search">
+                <span class="input-group-addon"><input type="submit" value=""><i class="fa fa-search"></i></span>
+            </div>
+        </form>
+    </div>
+
+    {% assign menu-type-value ="Accordion" -%}
+    {% include "/_System/includes/template/menu.inc" -%}
+
 </div>
+<div class="bg">
+    <div class="header">
+    	<div class="header-top">
+            <div class="clearfix">
+                <div class="pull-right hidden-xs text-right">
+	                <div class="pull-left">
+                    	<div class="phone pull-left">Toll Free: (800) 401–4277</div>
+                        <div class="pull-left">
+							<a href="" title="Facebook"><i class="fa fa-facebook"></i></a>
+							<a href="" title="LinkedIn"><i class="fa fa-linkedin"></i></a>
+							<a href="" title="Twitter"><i class="fa fa-twitter"></i></a>
+							<a href="" title="Pinterest"><i class="fa fa-pinterest"></i></a>
+                   		</div>
+                    </div>
+                    <div class="pull-right">              	
+						<div class="search">
+							<div class="site-search">
+								<form name="seach" method="GET" action="/search">
+									<div class="input-group">
+										<input class="form-control site-search" type="text" name="CAT_Search" id="CAT_Search" placeholder="Search">
+										<span class="input-group-addon">
+											<input type="submit" value="">
+											<i class="fa fa-search"></i>
+										</span>
+									</div>
+								</form>
+							</div>
+						</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-bottom sticky">
+            <div class="container">
+                <div class="row">
+                    <div class="col-xs-5 col-sm-2">
+                    	<div class="logo">
+                        	<h1 title="{{site_name}}">
+                                <a href="{{site_domain}}" title="{{site_name}}">
+                                    <img src="/assets/img/logo.png" class="img-responsive">
+                                </a>
+                            </h1>
+                        </div>
+                    </div>
+                    <div class="col-xs-7 col-sm-10">
+                        <div class="row">
+                            <div class="col-sm-11">
+                            	<div class="mobile-navigation pull-left hidden-sm hidden-md hidden-lg">
+                                    <a class="nav-mobile-control btn btn-primary toggle-menu menu-left push-body"><i class="fa fa-bars"></i></a>
+                                </div>
+                                <div class="navigation col-md-12 hidden-xs">
+									<div class="navigation-inner main-nav clearfix">
+										<div id="Menu"><ul id="MenuList" class="nav nav-pills nav-justified"><li class=""><a href="/">Home</a></li><li class="selected selected"><a href="" class="active">Components</a><ul id="MenuList" class="nav nav-pills nav-justified" style="visibility: hidden;"><li class=""><a href="/pages/sidebars">Sidebars</a></li><li class=""><a href="/pages/headers">Banners &amp; Headers</a></li><li class=""><a href="/pages/tabs">Tabs &amp; Accordions</a></li><li class=""><a href="/pages/popups" class="active">Popups</a></li><li class=""><a href="/pages/search">Site Search</a></li><li><a href="/pages/menus">Menus &amp; Navigation</a><ul id="MenuList" class="nav nav-pills nav-justified"><li><a href="" class="active">Sub Item 1</a></li></ul></li><li><a href="/pages/social-share">Social Share</a></li><li><a href="/pages/maps">Maps</a><ul id="MenuList" class="nav nav-pills nav-justified"><li><a href="/pages/maps/directions">Directions</a></li><li><a href="/pages/maps/multiple-pins">Multiple Pins</a></li></ul></li></ul></li><li><a href="" class="active">Layouts</a><ul id="MenuList" class="nav nav-pills nav-justified"><li><a href="" class="active">Modules</a><ul id="MenuList" class="nav nav-pills nav-justified"><li><a href="/blogs">Blog</a></li><li><a href="/pages/faqs">FAQs</a></li><li><a href="/pages/gallery">Photo Galleries</a></li><li><a href="/pages/comments">Comments</a></li></ul></li><li><a href="" class="active">WebApps</a><ul id="MenuList" class="nav nav-pills nav-justified"><li><a href="/pages/bios">Bios</a></li><li><a href="" class="active">Data Manipulation</a><ul id="MenuList" class="nav nav-pills nav-justified"><li><a href="/pages/filtering">Filtering</a></li><li><a href="/pages/grouping">Grouping</a></li><li><a href="/pages/directory">Directory</a></li></ul></li><li><a href="/pages/location-finder">Location Finder</a></li><li><a href="/pages/careers">Careers/Jobs</a></li><li><a href="/pages/product-service">Product/Service</a></li><li><a href="/pages/calendar">Events/Calendar</a></li></ul></li><li><a href="" class="active">Pages</a><ul id="MenuList" class="nav nav-pills nav-justified"><li><a href="/pages/contact">Contact</a></li><li><a href="/pages/landing-page">Landing Page</a></li><li><a href="/pages/about">About</a></li><li><a href="/404">404</a></li></ul></li></ul></li><li class=""><a href="/pages/style-guide">Style Guide</a></li><li><a href="/pages/store">Store</a></li></ul></div>
+									</div>
+								</div>
+                                
+                            </div>
+                            
+                            <div class="col-sm-1 pull-right">
+                            	<a href="tel:{module_contentholder name="Phone Number"}" class="btn btn-primary pull-left hidden-sm hidden-md hidden-lg"><i class="fa fa-phone"></i></a>
+                                {% include "/_System/includes/shop/cart-summary.inc" -%}
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="page-header text-center"><h2>Page Title</h2></div>
+
+	
+	
+	
+	
+	
 
 <div class="sticky">Sticky</div>
 <!-- Content -->
@@ -99,7 +185,7 @@
 <div class="container">
   <h2>Fancybox</h2>
   <div class="row">
-  	<div class="col-xs-12 animate">
+  	<div class="col-xs-12">
   		<a href="/assets/img/stock-photos/1.jpg" class="btn btn-primary fancy">Popup</a>
   	</div>
   </div>
@@ -147,6 +233,22 @@
 </div>
 
 
+<div class="footer">
+        <div class="footer-top">
+            <div class="container clearfix">
+                <div class="copyright pull-left">
+                © 2016, <a href="/">{module_sitename}</a> | <a href="http://envoc.com" target="_blank" title="Envoc is an award-winning, full-service digital agency with services ranging from custom software and mobile app development to web design and branding.">Website Design</a> by Envoc. </div>
+                <div class="nav-footer pull-right clearfix hidden-xs hidden-sm">
+                    <div class="navigation col-md-12 hidden-xs">
+						<div class="navigation-inner main-nav clearfix">
+							<div id="Menu"><ul id="MenuList" class="nav nav-pills nav-justified"><li class=""><a href="/">Home</a></li><li class="selected selected"><a href="" class="active">Components</a><ul id="MenuList" class="nav nav-pills nav-justified" style="visibility: hidden;"><li class=""><a href="/pages/sidebars">Sidebars</a></li><li class=""><a href="/pages/headers">Banners &amp; Headers</a></li><li class=""><a href="/pages/tabs">Tabs &amp; Accordions</a></li><li class=""><a href="/pages/popups" class="active">Popups</a></li><li class=""><a href="/pages/search">Site Search</a></li><li><a href="/pages/menus">Menus &amp; Navigation</a><ul id="MenuList" class="nav nav-pills nav-justified"><li><a href="" class="active">Sub Item 1</a></li></ul></li><li><a href="/pages/social-share">Social Share</a></li><li><a href="/pages/maps">Maps</a><ul id="MenuList" class="nav nav-pills nav-justified"><li><a href="/pages/maps/directions">Directions</a></li><li><a href="/pages/maps/multiple-pins">Multiple Pins</a></li></ul></li></ul></li><li><a href="" class="active">Layouts</a><ul id="MenuList" class="nav nav-pills nav-justified"><li><a href="" class="active">Modules</a><ul id="MenuList" class="nav nav-pills nav-justified"><li><a href="/blogs">Blog</a></li><li><a href="/pages/faqs">FAQs</a></li><li><a href="/pages/gallery">Photo Galleries</a></li><li><a href="/pages/comments">Comments</a></li></ul></li><li><a href="" class="active">WebApps</a><ul id="MenuList" class="nav nav-pills nav-justified"><li><a href="/pages/bios">Bios</a></li><li><a href="" class="active">Data Manipulation</a><ul id="MenuList" class="nav nav-pills nav-justified"><li><a href="/pages/filtering">Filtering</a></li><li><a href="/pages/grouping">Grouping</a></li><li><a href="/pages/directory">Directory</a></li></ul></li><li><a href="/pages/location-finder">Location Finder</a></li><li><a href="/pages/careers">Careers/Jobs</a></li><li><a href="/pages/product-service">Product/Service</a></li><li><a href="/pages/calendar">Events/Calendar</a></li></ul></li><li><a href="" class="active">Pages</a><ul id="MenuList" class="nav nav-pills nav-justified"><li><a href="/pages/contact">Contact</a></li><li><a href="/pages/landing-page">Landing Page</a></li><li><a href="/pages/about">About</a></li><li><a href="/404">404</a></li></ul></li></ul></li><li class=""><a href="/pages/style-guide">Style Guide</a></li><li><a href="/pages/store">Store</a></li></ul></div>
+						</div>
+					</div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
 <a href="#" class="btn btn-default back-to-top"><i class="fa fa-chevron-up"></i></a>
 </body>
 </html>
