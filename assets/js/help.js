@@ -31,11 +31,7 @@ $(function () {
 	  });
 	});
 	
-	
-	
-	if ($('.animate').length > 0) { 
-		$('.animate .box').inview();
-	}
+	$('.animate').inview();
 
 	//Navigation helper
     $(".navigation-inner ul li").hover(function(){
