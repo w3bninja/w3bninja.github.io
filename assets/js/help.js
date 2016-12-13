@@ -83,14 +83,17 @@ $(function () {
 	}
 	
 	//responsive Tabs
-	$('.responsiveTabs').responsiveTabs({
-		rotate: false,
-		startCollapsed:	'accordion',
-		collapsible: 	'accordion',
-		setHash: 		true,
-		active:			0,
-		scrollToAccordion: true
-	});
+	if ($('.responsiveTabs').length > 0) { 
+		$('.responsiveTabs').responsiveTabs({
+			rotate: false,
+			startCollapsed:	'accordion',
+			collapsible: 	'accordion',
+			setHash: 		true,
+			active:			0,
+			scrollToAccordion: true
+		});
+	}
+	
 	
 	
 	//Masonry Grid
@@ -110,11 +113,6 @@ $(function () {
 	
 	
 });
-
-window.addToCartButtonClick = function(catalogueId, productId, frame, details, blank1, blank2, buynow, options){
-	AddToCart(catalogueId,productId, frame, details, blank1, blank2, buynow, options);
-	$('.dropdown-toggle').dropdown(); // rerun the Bootstrap dropdowns
-};
 
 
 
