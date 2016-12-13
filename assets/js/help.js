@@ -23,6 +23,16 @@ $(function () {
 		$('.parallax').parallax();
 	});
 	
+	//Masonry Grid
+	var $grid = $('.grid').imagesLoaded( function() {
+	  // init Masonry after all images have loaded
+	  $grid.masonry({
+		itemSelector: '.item'
+	  });
+	});
+	
+	
+	
 	if ($('.animate').length > 0) { 
 		$('.animate').inview();
 	}
@@ -97,22 +107,6 @@ $(function () {
 			scrollToAccordion: true
 		});
 	}
-	
-	
-	
-	//Masonry Grid
-	var $grid = $('.grid').imagesLoaded( function() {
-	  // init Masonry after all images have loaded
-	  $grid.masonry({
-		itemSelector: '.item'
-	  });
-	});
-	//Auto Adust Height Grid
-	
-	
-	
-	// FAQ Control
-	$('.faq-nav').appendTo($('.faq-control'));
 
 	
 	
