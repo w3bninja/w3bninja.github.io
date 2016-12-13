@@ -1,7 +1,8 @@
 <!DOCTYPE html>
 <html>
 <head>
-
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
 <!-- STYLES -->
 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css">
 <link href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css" rel="stylesheet">
@@ -35,7 +36,13 @@
 <script type="text/javascript" src="/assets/js/help.js"></script>
 </head>
 <body>
+<style>
+.msg{padding:20px; background:#FFF; box-shadow:0 0 10px rgba(0, 0, 0, .3); position:fixed; top:0; left:0; right:0; z-index:99999;}
+</style>
 
+<div class="text-center" style="display:none">
+<span class="msg"></span>
+</div>
 <div class="mobile-navigation">
 	<a class="nav-mobile-control btn btn-primary toggle-menu menu-left push-body jPushMenuBtn"><i class="fa fa-bars"></i></a>
 </div>
