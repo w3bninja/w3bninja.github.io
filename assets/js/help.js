@@ -17,9 +17,9 @@ $(function () {
 	};
 	$('.grid-box').gridBox();
 	$(window).resize(function() {
-		$('.item').removeAttr('style');
-		$height = $('.item').height();
-		$('.item').height($height);
+		$('.grid-box .item').removeAttr('style');
+		$height = $('.grid-box .item').height();
+		$('.grid-box .item').height($height);
 		$('.parallax').parallax();
 	});
 	
