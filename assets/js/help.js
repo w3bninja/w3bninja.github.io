@@ -34,7 +34,7 @@ $(function () {
 	
 	
 	if ($('.animate').length > 0) { 
-		$('.animate').inview();
+		$('.animate .box').inview();
 	}
 
 	//Navigation helper
