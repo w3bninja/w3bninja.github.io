@@ -1,21 +1,24 @@
-// The Extra Point
-// Developer: Adam Culpepper
+// Developer: Aaron Landry
 // Built by: Envoc (envoc.com)
 
-$(function () {
-	$.fn.gridBox = function() {
-		var $gridbox = $(this).imagesLoaded( function() {
-			$gridbox.each(function(){  
-				 var $columns = $('.item',this);
-				 var maxHeight = Math.max.apply(Math, $columns.map(function(){
-					 return $(this).height();
-				 }).get());
-				 $columns.height(maxHeight);
-			});
+$.fn.gridBox = function() {
+	var $gridbox = $(this).imagesLoaded( function() {
+		$gridbox.each(function(){  
+			 var $columns = $('.item',this);
+			 var maxHeight = Math.max.apply(Math, $columns.map(function(){
+				 return $(this).height();
+			 }).get());
+			 $columns.height(maxHeight);
 		});
-		
-	};
+	});
+
+};
+
+
+$(function () {
+	
 	$('.grid-box').gridBox();
+	
 	$(window).resize(function() {
 		$('.grid-box .item').removeAttr('style');
 		$height = $('.grid-box .item').height();
