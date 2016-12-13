@@ -331,6 +331,19 @@ q q:after { content: '\2019'; }
   -ms-transform: translate(0px, 0px);
   transform: translate3d(0px, 0px, 0px);
 }
+.block-left {
+	opacity: 0;
+	-webkit-transform: translateX(-80px);
+	-moz-transform: translateX(-80px);
+	transform: translateX(-80px);
+}
+
+.block-right {
+	opacity: 0;
+	-webkit-transform: translateX(80px);
+	-moz-transform: translateX(80px);
+	transform: translateX(80px);
+}
 
 
 
