@@ -37,7 +37,7 @@ $(function () {
     });
 	
 	
-	if ($('..sticky').length > 0) {
+	if ($('.sticky').length > 0) {
 		// Sticky Element - Sticks the element to the top of the site
 		$(".sticky").wrap("<div class='sticky-container'></div>");
 		$(".sticky").wrap("<div class='sticky-container-inner'></div>");
