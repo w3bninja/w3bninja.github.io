@@ -23,14 +23,9 @@ $(function () {
 		$('.parallax').parallax();
 	});
 	
-	
-	$('#demo div').inview();
-	
-	
-	
-	window.location.origin || (window.location.origin = window.location.protocol + '//' + window.location.host);
-	window.app = {};
-	var url = app.url = (location.href); //Cached for heavy general use
+	if ($('.animate').length > 0) { 
+		$('.animate').inview();
+	}
 
 	//Navigation helper
     $(".navigation-inner ul li").hover(function(){
@@ -60,13 +55,17 @@ $(function () {
 		$('.parallax').parallax();
 	}
 	
-	//Push Navigation Menu
+	// Push Navigation Menu
 	$('.toggle-menu').jPushMenu({
 		closeOnClickLink   : false,
 		closeOnClickOutside: false
 	});
 	
-	$("#webticker ul").webTicker();
+	// Ticker
+	if ($('#webticker').length > 0) { 
+		$("#webticker ul").webTicker();
+	}
+	
 	
 	// Headers
 	$('.page-header-inner').appendTo( $('.page-header') );
