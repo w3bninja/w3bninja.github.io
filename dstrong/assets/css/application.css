@@ -1,0 +1,242 @@
+
+h1{
+  font-size: 26px;
+}
+h2 {
+  font-size: 22px;
+}
+p{
+  font-size: 20px;
+}
+
+.ds-ul {
+  list-style: none;
+  padding:0;
+  margin:0;
+}
+
+.ds-ul li {
+  font-size: 20px;
+  padding-left: 2em;
+  text-indent: -.7em;
+}
+
+.ds-ul li:before {
+  content: "• ";
+  color: #CC0000; /* or whatever color you prefer */
+}
+.underline{
+  text-decoration: underline;
+}
+#flash_notice {
+  padding: 5px 20px;
+  font-size: 15px;
+  background-color: #0BAF00;
+  color: #fff;
+}
+
+#flash_alert {
+  padding: 5px 20px;
+  font-size: 15px;
+  background-color: #FFE900;
+  color: #000;
+}
+
+#error_explanation ul {
+  margin-bottom: 0;
+  padding: 0;
+}
+
+#error_explanation ul li {
+  list-style: none;
+  width: 100%;
+  *margin: 4px;
+  background-color: #C40000;
+  color: #fff;
+  border: 1px solid #840000;
+  padding: 4px 10px;
+}
+
+.field_with_errors {
+  padding: 2px;
+  border:  2px solid red;
+}
+
+.panel-btn {
+  padding: 5px 10px;
+  background-color: #0087FF;
+  color: #fff;
+  font-size: 14px;
+  border-radius: 10px;
+  display: inline-block;
+  cursor: pointer;
+  transition: background-color .2s;
+}
+
+.panel-btn:hover {
+  background-color: #22A9FF;
+  transition: background-color .2s;
+  text-decoration: none;
+}
+
+.drop-active {
+  border: 2px solid #30699B;
+}
+
+#assigned_blocks {
+  min-height: 150px;
+  border: 1px solid #ddd;
+}
+
+#available_blocks {
+  min-height: 150px;
+  border: 1px solid #ddd;
+}
+
+.draggable-block .outer {
+  margin: 5;
+  background-color: #C5D9E2;
+}
+
+.draggable-block {
+  list-style: none;
+  margin: 10px;
+}
+
+.draggable-block .title, .draggable-block .controls {
+  display: inline-block;
+}
+
+.draggable-block .title {
+  font-weight: bold;
+  margin: 5px 50px 5px 20px;
+}
+
+.draggable-block .control {
+  display: inline-block;
+  font-size: 12px;
+  font-weight: normal;
+}
+
+.draggable-block label {
+  font-weight: normal;
+  margin-left: 25px;
+}
+
+.checklabel {
+  margin-left: 0 !important;
+}
+
+.draggable-block input[type='number'] {
+  width: 40px;
+  text-size: 9px;
+  font-weight: none;
+}
+
+.draggable-block input[type='checkbox'] {
+  margin-left: 25px;
+}
+
+.weekly-only {
+  display: none;
+}
+
+.straight-sequence-only {
+  display: none;
+}
+
+.highlighted-input {
+  background-color: #FFEE5E;
+}
+
+.draggable-block .video-preview-button {
+  float: right;
+}
+
+.video-preview-button {
+  position: relative;
+  margin: 0 15px;
+  display: inline;
+}
+
+.video-preview-button .video-preview-player {
+  position: absolute;
+  background-image: url(/assets/video-previewer-bg-a8816a333bc3a5457b8066b17a7d1f24fc7864d4c3103470964e06d14377f6cd.png);
+  background-position: left top;
+  right: -15px;
+  width: 150px;
+  height: 145px;
+  display: none;
+  padding: 34px 5px 5px 5px;
+  z-index: 9999 !important;
+}
+
+#workout-video-container {
+  position: relative;
+  height: 500px;
+}
+
+#workout-video-player {
+  position: absolute;
+  z-index: 1;
+}
+
+#timer-container {
+  position: absolute;
+  left: -1px;
+  top: -1px;
+  z-index: 2;
+}
+
+#video-tag {
+  border-radius: 100%;
+  object-fit: fill;
+}
+
+#seconds-timer {
+  position: absolute;
+  z-index: 3;
+  left: 44%;
+  top: 46%;
+  font-size: 36px;
+  font-weight: bold;
+  color: #fff;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+#player-text {
+  position: absolute;
+  z-index: 4;
+  left: 44%;
+  top: 46%;
+  font-size: 24px;
+  font-weight: bold;
+  color: #fff;
+  transform: translateX(-50%);
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  transform: translateY(-50%);
+  -webkit-transform: translateY(-50%);
+  -moz-transform: translateY(-50%);
+  -ms-transform: translateY(-50%);
+}
+
+.player-nav-button {
+  display: inline-block;
+  color: #ddd;
+  background-color: #000;
+  padding: 3px 5px;
+  margin: 15px;
+}
+
+.player-nav-button.unavailable {
+  display: none;
+}
