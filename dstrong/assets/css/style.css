@@ -114,6 +114,16 @@ h3 span{display:block; font-weight:800; text-transform:uppercase;}
 .nav-accordion-video .play, .nav-accordion-video .pause{position:absolute; top:0; left:0; bottom:0; right:0;}
 .nav-accordion-video .pause{display:none;}
 
+.nav-accordion-video img{margin-right:10px;}
+.nav-accordion-video i{font-size:40px;}
+
+.dialog .ui-dialog-contain{box-shadow:0 0 10px rgba(0, 0, 0, .1);}
+.dialog .ui-dialog-contain .ui-header{background:#EEE; border-bottom:1px solid #CCC;}
+.dialog .ui-dialog-contain .ui-header h1{font-size:20px; padding:10px;}
+.dialog .ui-dialog-contain .ui-header h1 a{float:right;}
+.dialog .ui-dialog-contain .ui-content{padding:10px; border:0;}
+.dialog .ui-dialog-contain .ui-content .btn{margin-bottom:10px;}
+
 
 
 @import "compass/css3";
