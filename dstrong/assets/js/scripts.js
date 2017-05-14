@@ -82,27 +82,10 @@ $(function () {
 			var set = $(this);
 			var setVideo = set.find('.video');
 			var setPlay = set.find('.play');
-			var setPause = set.find('.pause');
-
-			set.fitVids();
-			// Iframe/player variables
-			var iframe = $(setVideo)[0];
-			var player = $f(iframe);
-			// Open on play
+			$(set).fitVids();
 			$(setPlay).click(function(){
-				$(setPause).addClass('show')
-				$(setPlay).addClass('hide')
-				player.api("play");
+				$(setVideo).get(0).paused ? $(setVideo).get(0).play() : $(setVideo).get(0).pause();
 				$(setPlay).parent().parent().find('ul').toggle();
-			})
-
-			// Closes on click outside
-			$(setPause).click(function(){
-				$(setPause).removeClass('show')
-				$(setPlay).removeClass('hide')
-				setTimeout(function() {}, 300);
-				player.api("pause");
-				$(setPause).parent().parent().find('ul').toggle();
 			});
 		});
 	};
