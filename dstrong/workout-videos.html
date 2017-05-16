@@ -74,7 +74,11 @@
   <div class="container">
     <div class="header clearfix"><a href="#leftpanel2" class="nav-mobile-control btn pull-left toggle-menu menu-left push-body">Menu</a> <a href="" class="btn pull-right">Back</a> </div>
     <div class="section-header">
-    <div><input type="search" name="search-1" id="search-1" value=""></div>
+    <div>
+	<form class="ui-filterable">
+    <input id="filterBasic-input" data-type="search">
+</form>	
+    </div>
      <ul class="nav nav-justified">
      	<li><a href="./filter.html" role="button" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="slidedown">Filter</a></li>
      	<li><a href="./categories.html" role="button" class="ui-shadow ui-btn ui-corner-all ui-btn-inline" data-transition="slidedown">Categories</a></li>
@@ -82,7 +86,7 @@
     </div>
     
     
-    <ul class="nav-accordion-video">
+    <ul class="nav-accordion-video" data-filter="true" data-input="#filterBasic-input">
 		<li class="video-container">
 			<a href="#">
 				<div class="play"></div>
