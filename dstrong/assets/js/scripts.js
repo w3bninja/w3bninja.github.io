@@ -84,7 +84,7 @@ $(function () {
 			var setPlay = set.find('.play');
 			$(set).fitVids();
 			$(setPlay).click(function(){
-				$(setVideo).get(0).paused ? $(setVideo).get(0).play() : $(setVideo).get(0).pause();
+				//$(setVideo).get(0).paused ? $(setVideo).get(0).play() : $(setVideo).get(0).pause();
 				$(setPlay).parent().parent().find('ul').toggle();
 			});
 		});
