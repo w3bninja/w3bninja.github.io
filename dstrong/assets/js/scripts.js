@@ -66,14 +66,12 @@ $(function () {
 	
 	$( "body>[data-role='panel']" ).panel();
 	
-	$('.nav-accordion .video-container .subs').click(function(){
-	  $('i').toggleClass('pause play');
-	});
 	
 	
-	$(".nav-accordion-video li:has(ul li)").find("a:first").addClass("subs");
-	$('.nav-accordion-video .subs i').click(function(e){
+	
+	$('.nav-accordion-video div').click(function(e){
 		e.preventDefault();
+		$(this).parent().find('video').toggle();
     });
 	
 	
