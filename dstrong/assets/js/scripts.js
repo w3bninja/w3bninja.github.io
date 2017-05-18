@@ -77,23 +77,6 @@ $(function () {
     });
 	
 	
-	$.fn.makeItFit = function() {
-		$(this).each(function() {
-			var set = $(this);
-			var setVideo = set.find('.video');
-			var setPlay = set.find('.play');
-			$(set).fitVids();
-			$(setPlay).click(function(){
-				//$(setVideo).get(0).paused ? $(setVideo).get(0).play() : $(setVideo).get(0).pause();
-				$(setPlay).parent().parent().find('ul').toggle();
-			});
-		});
-	};
-	if ($('.video-container').length > 0) {
-		$('.video-container').makeItFit();
-	}
-	
-	
 	
 	
 	
