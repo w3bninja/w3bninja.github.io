@@ -124,7 +124,8 @@ h3 span{display:block; font-weight:800; text-transform:uppercase;}
 .dialog .ui-dialog-contain .ui-content{padding:10px; border:0;}
 .dialog .ui-dialog-contain .ui-content .btn{margin-bottom:10px;}
 
-
+.video-container{padding:5px;border-top:1px solid #EEE;}
+.video-container:first-child{border:0;}
 
 @import "compass/css3";
 .square {background: #CCC; display: block; width:620px; height:620px; position: relative; visibility:hidden; }
