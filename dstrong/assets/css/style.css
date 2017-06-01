@@ -2,6 +2,7 @@ body, html{height:100%;
 -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
+a{color:#a51d19;}
 body{text-align:center; font-family: 'Open Sans', sans-serif; text-transform:uppercase; background-color:#f9f9f9!important; background-size:cover;}
 .bg01.ui-page .ui-content{background:#f9f9f9 url(../img/WO-BG_mma.png) no-repeat top center;}
 .bg02.ui-page .ui-content{background:#f9f9f9 url(../img/WO-BG-90_advanced.png) no-repeat top center;}
